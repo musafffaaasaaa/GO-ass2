@@ -1,4 +1,3 @@
-# GO-ass2
 package main
 
 import "fmt"
@@ -34,12 +33,13 @@ func (w *walnutTopping) getPrice() int {
 func main() {
 	cream := &iseCream{}
 
-	isecreamWithChocolate := &chocolateTopping{
+isecreamWithChocolate := &chocolateTopping{
 		cream: cream,
 	}
 
-	isecreamWithChocolateAndWalnut := &walnutTopping{
+isecreamWithChocolateAndWalnut := &walnutTopping{
 		cream: isecreamWithChocolate,
 	}
-	fmt.Println("Price of ice cream with chocolate and walnut topping is: ", isecreamWithChocolateAndWalnut.getPrice(), "Tenge")
+fmt.Println("Price of ice cream with chocolate and walnut topping is: ", isecreamWithChocolateAndWalnut.getPrice(), "Tenge")
 }
+
